@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #D7D2CB;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.section {
+    margin-bottom: 10px;
+}
+
+label {
+    margin-right: 10px;
+}
+
+input,
+button {
+    padding: 8px;
+    margin-right: 10px;
+}
+
+#randomNumbersSection {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#randomNumbers {
+    font-weight: bold;
+}
+
+.output-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.result {
+    font-size: 24px;
+    text-align: center;
+    padding: 20px;
+    margin: 5px;
+    border: 1px solid #ababab;
+    border-radius: 20%;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+.fizz {
+    background-color: #f00;
+    color: #fff;
+}
+
+.buzz {
+    background-color: #00f;
+    color: #fff;
+}
+
+.fizzbuzz {
+    background-color: #0f0;
+    color: #000;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

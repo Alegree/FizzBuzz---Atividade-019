@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FizzBuzz </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2>Desafio FizzBuzz</h2>
+    <h5>Rodrigo Alegre 12ºE</h5>
+    <div class="container">
+        <div class="section">
+            <label for="manualNumbers">Números Manuais (separados por vírgula):</label>
+            <input type="text" id="manualNumbers" placeholder="Ex: 20, 5, 7, 3, 47, 8, 30, 74, 22, 17">
+            <button onclick="startManual()">Iniciar Manual</button>
+        </div>
+
+        <div class="section">
+            <label for="randomCount">Quantidade de Números Aleatórios:</label>
+            <input type="number" id="randomCount" min="1" value="10">
+            <button onclick="startRandom()">Iniciar Aleatório</button>
+        </div>
+    </div>
+
+    <div id="randomNumbersSection">
+        <h2>Números Aleatórios Gerados:</h2>
+        <div id="randomNumbers"></div>
+    </div>
+
+    <div id="output" class="output-container"></div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
